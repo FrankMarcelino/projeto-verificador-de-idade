@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Qual sua idade?</title>
     <link rel="stylesheet" href="stilo.css">
 </head>
 <body>
-    <header><h1>Titulo</h1></header>
+    <header><h1>Verificador de Idade</h1></header>
     <section>
         <div>
-            teste
-        </div>
-        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="itxtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="sexo" id="imasc" checked>
+                <label for="imasc">Masculino</label>
+                <input type="radio" name="sexo" id="ifem">
+                <label for="ifem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
 
+        </div>
+        <div id="ires">
+            Preencha os dados acima para ver o resultado!
         </div>
     </section>
     <footer><p>&copy; CursoemVideo</p></footer>
